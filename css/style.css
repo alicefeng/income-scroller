@@ -1,0 +1,317 @@
+body {
+	margin: 0 auto;
+	max-width: 50vw;  /* make responsive */
+	/*font-family: 'PT Serif', serif;*/
+	font-family: 'Lora', serif;
+	line-height: 1.5;
+	/*font-size: 1.2rem;*/
+	padding: 0em 1em;
+	color: #555;
+}
+
+#cover {
+	height: 100vh;
+	box-sizing: border-box;
+	/*margin-top: -8%;*/
+	border-bottom: 2px solid #555;
+/*	background-color: #555;
+	color: #eee;*/
+}
+
+h1 {
+	font-size: 7rem;
+	line-height: 1.2;
+	margin: 0;
+	padding-top: 5%;
+}
+
+.direction {
+	font-style: italic;
+	padding-top: 3%;
+	font-size: 1.777rem;
+}
+
+.inc_level, .annotation {
+ 	position: absolute;
+ 	width: 48vw;  /* make responsive */
+ 	box-sizing: border-box;
+ 	text-align: center;
+ 	padding: 3% 3%;
+ }
+
+.inc_level {
+	background-color: #e6e6e6;
+}
+
+#income_scroll {
+	position: relative;
+	/*background-color: #fff;*/
+	height: calc(100vh + 15600000px + 250px);
+	background: linear-gradient(to right, #fff, #fff 98%, transparent 98.05%),
+				repeating-linear-gradient(to bottom, 
+										  #ccc, 
+										  #ccc 1px, 
+										  transparent 1px, 
+										  transparent 99px);  /* Firefox rendering bug with the first gradient */
+ }
+
+#counter {
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	z-index: 100;
+	margin-top: 0.1rem;
+	padding: 1rem 0rem;
+	font-size: 1.333rem;
+	border-bottom: 2px solid #b3b3b3;
+}
+
+#label {
+	position: absolute;
+	top: 200px;
+	width: 50vw;
+	height: 100px;
+}
+
+#label svg {
+	display: block;
+	margin-left: calc(50vw - 75px - 2%);
+	margin-right: 2%;
+}
+
+#i12486 {
+	top: calc(100vh + 12486px);
+}
+
+#i14000 {
+	top: calc(100vh + 14000px);
+}
+
+#i16072 {
+	top: calc(100vh + 16072px);
+}
+
+#i19318 {
+	top: calc(100vh + 19318px);
+}
+
+#i24339 {
+	top: calc(100vh + 24339px);
+}
+
+#i26000 {
+	top: calc(100vh + 26000px);
+}
+
+#i28000 {
+	top: calc(100vh + 28000px);
+}
+
+#i35000 {
+	top: calc(100vh + 35000px);
+}
+
+#i38000 {
+	top: calc(100vh + 38000px);
+}
+
+#i40000 {
+	top: calc(100vh + 40000px);
+}
+
+#i42000 {
+	top: calc(100vh + 42000px);
+}
+
+#i44000 {
+	top: calc(100vh + 44000px);
+}
+
+#i45600 {
+	top: calc(100vh + 45600px);
+}
+
+/*#i48000 {
+	top: calc(100vh + 48000px);
+}*/
+
+#i59039 {
+	top: calc(100vh + 59039px);
+}
+
+#i64000 {
+	top: calc(100vh + 64000px);
+}
+
+#i67000 {
+	top: calc(100vh + 67000px);
+}
+
+#i70000 {
+	top: calc(100vh + 70000px);
+}
+
+#i74869 {
+	top: calc(100vh + 74869px);
+}
+
+#i80000 {
+	top: calc(100vh + 80000px);
+}
+
+#i83000 {
+	top: calc(100vh + 83000px);
+}
+
+#i86000 {
+	top: calc(100vh + 86000px);
+}
+
+#i89000 {
+	top: calc(100vh + 89000px);
+}
+
+#i100000 {
+	top: calc(100vh + 100000px);
+}
+
+#i105000 {
+	top: calc(100vh + 105000px);
+}
+
+#i110000 {
+	top: calc(100vh + 110000px);
+}
+
+#i120000 {
+	top: calc(100vh + 120000px);
+}
+
+#i170536 {
+	top: calc(100vh + 170536px);
+}
+
+#i180000 {
+	top: calc(100vh + 180000px);
+}
+
+#i185000 {
+	top: calc(100vh + 185000px);
+}
+
+#i225251 {
+	top: calc(100vh + 225251px);
+}
+
+#i250000 {
+	top: calc(100vh + 250000px);
+}
+
+#i260000 {
+	top: calc(100vh + 260000px);
+}
+
+#i280000 {
+	top: calc(100vh + 280000px);
+}
+
+#i290000 {
+	top: calc(100vh + 290000px);
+}
+
+#i300000 {
+	top: calc(100vh + 300000px);
+}
+
+#i310000 {
+	top: calc(100vh + 310000px);
+}
+
+#i350000 {
+	top: calc(100vh + 350000px);
+}
+
+#i400000 {
+	top: calc(100vh + 400000px);
+}
+
+#i410000 {
+	top: calc(100vh + 410000px);
+}
+
+#i420000 {
+	top: calc(100vh + 420000px);
+}
+
+#i430000 {
+	top: calc(100vh + 430000px);
+}
+
+#i440000 {
+	top: calc(100vh + 440000px);
+}
+
+#i500000 {
+	top: calc(100vh + 500000px);
+}
+
+#i550000 {
+	top: calc(100vh + 550000px);
+}
+
+#i1000000 {
+	top: calc(100vh + 1000000px);
+}
+
+#i1010000 {
+	top: calc(100vh + 1010000px);
+}
+
+#i1020000 {
+	top: calc(100vh + 1020000px);
+}
+
+#i1500000 {
+	top: calc(100vh + 1500000px);
+}
+
+#i7800000 {
+	top: calc(100vh + 7800000px);
+}
+
+#i8000000 {
+	top: calc(100vh + 8000000px);
+}
+
+#i8500000 {
+	top: calc(100vh + 8500000px);
+}
+
+#i10000000 {
+	top: calc(100vh + 10000000px);
+}
+
+#i10005000 {
+	top: calc(100vh + 10005000px);
+}
+
+#i10010000 {
+	top: calc(100vh + 10010000px);
+}
+
+#i12000000 {
+	top: calc(100vh + 12000000px);
+}
+
+#i15600000 {
+	top: calc(100vh + 15600000px);
+}
+
+#footer {
+	height: 100vh;
+	margin-top:  100vh;
+	box-sizing: border-box;
+	background: #555;
+	color: #e6e6e6;
+	padding: 5%;
+}

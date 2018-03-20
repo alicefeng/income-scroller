@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">  -->
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <title>Income Scroller</title>
+    </head>
+    
+    <body>
+		
+		<div id="cover">
+            <h1>What Would the US Income Distribution Look Like if 1 pixel = $1?</h1>
+            <p>(A scroller inspired by __.)</p>
+            <p class="direction">Scroll down to start making money.</p>
+        </div>
+
+        <div id="income_scroll">
+            <div id="counter">
+                <p>You have earned: $<span id="income"></span></p>
+            </div>
+            <div id="label">
+                <svg width="70px" height="100px"><text x="15" y="55" fill="#555">$100</text><polyline fill="none" stroke="#b3b3b3" points="70,1 60,1 60,95 70,95"/></svg>
+            </div>
+            
+            <div id="i12486" class="inc_level">
+                <p>You have made it above the poverty line! If you are single and have no kids that is.</p>
+                <p>The poverty threshold for 1 adult in 2016 was $12,486.</p>
+            </div>
+            <div id="i14000" class="annotation">
+                <p>The poverty threshold varies depending on age and family size but does not take into consideration cost-of-living differences.</p>
+            </div>
+            <div id="i16072" class="inc_level">
+                <p>You have made it above the poverty line if you and your partner are less than 65 years old and have no kids.</p>
+                <p>The poverty threshold for 2 adults under age 65 was $16,072.</p>
+            </div>
+            <div id="i19318" class="inc_level">
+                <p>You have made it above the poverty line if you and your partner have one child.</p>
+                <p>The poverty threshold for 2 adults and 1 child was $19,318.</p>
+            </div>
+            <div id="i24339" class="inc_level">
+                <p>You have made it above the poverty line if you and your partner have two kids.</p>
+                <p>The poverty threshold for 2 adults and 2 children was $24,339.</p>
+            </div>
+            <div id="i26000" class="annotation">
+                <p>In 2016, 12.6 percent of Americans were living in poverty. That's 40.6 million people in poverty.</p>
+            </div>
+            <div id="i28000" class="annotation">
+                <p>The US also has one of the worst child poverty rates in the world with nearly one in three children living in poverty.</p>
+            </div>
+            <div id="i35000" class="annotation">
+                <p>We are starting to make our way into the middle class.</p>
+            </div>
+            <div id="i38000" class="annotation">
+                <p>But what is the middle class?</p>
+            </div>
+            <div id="i40000" class="annotation">
+                <p>There is no legal definition of the middle class.  Instead, researchers have used various cutoffs usually based on income.</p>
+            </div>
+            <div id="i42000" class="annotation">
+                <p>Some define the middle class as everyone except the lowest and highest 20% of earners.</p>
+            </div>
+            <div id="i44000" class="annotation">
+                <p>Others consider the middle class to be households that fall in the middle 50 percent of the income distribution.</p>
+            </div>
+            <div id="i45600" class="inc_level">
+                <p>You have made it into the middle class!  40 percent of the population earn less than you so you are in the middle fifth of the income distribution which is another way some people define "middle class."</p>
+            </div>
+          <!--   <div id="i48000" class="annotation">
+                <p>Yet another definition is those earning between two-thirds and double the median income.</p>
+            </div> -->
+            <div id="i59039" class="inc_level">
+                <p>You now earn more than half the population.  The median income in the US in 2016 was $59,039.</p>
+            </div>
+            <div id="i64000" class="annotation">
+                <p>But the middle class may be defined more by its aspirations than by its income.</p>
+            </div>
+            <div id="i67000" class="annotation">
+                <p>Families in the middle class tend to dream of owning a house and a car and want to be able to send their children to college.</p>
+            </div>
+            <div id="i70000" class="annotation">
+                <p>They also desire health and retirement security and the ability to take the occasional family vacation.</p>
+            </div>
+            <div id="i74869" class="inc_level">
+                <p>Now you earn more than 60 percent of the population.</p>
+            </div>
+            <div id="i80000" class="annotation">
+                <p>However, since the 1970s, the share of the population belonging to the middle class has been shrinking.</p>
+            </div>
+            <div id="i83000" class="annotation">
+                <p>The income and wealth gap between the middle and upper classes has increased over time as the gains for middle- and lower-income households failed to keep pace with the upper class.</p>
+            </div>
+            <div id="i86000" class="annotation">
+                <p>Wage growth has been mostly non-existent since the Great Recession.</p>
+            </div>
+            <div id="i89000" class="annotation">
+                <p>Indeed, the median income in the US has been declining over the past four decades.  The average pretax income of the bottom 50 percent has stagnated since 1980.</p>
+            </div>
+            <div id="i100000" class="annotation">
+                <p>While the middle class has been losing ground, upper-income families have been flourishing.</p>
+            </div>
+             <div id="i105000" class="annotation">
+                <p>In 1983, upper-income families had three times as much wealth as middle-income families.</p>
+            </div>  
+             <div id="i110000" class="annotation">
+                <p>Thirty years later, they had seven times as much wealth.</p>
+            </div>          
+            <div id="i120000" class="annotation">
+                <p>Complex factors such as globalization and technological change have allowed those at the top to reap more of the rewards while eliminating jobs that once provided steady middle class incomes.</p>
+            </div>
+            <div id="i170536" class="inc_level">
+                <p>You have made it into the top 10 percent of all income earners!</p>
+                <p>The top 10% had an income of at least $170,536 in 2016.</p>
+            </div>
+            <div id="i180000" class="annotation">
+                <p>Inequality is now so severe that the top 10 percent average more than nine times as much income as the bottom 90 percent.</p>
+            </div>
+            <div id="i185000" class="annotation">
+                <p>They also took more than half of the country's total income.</p>
+            </div>
+            <div id="i225251" class="inc_level">
+                <p>You are now in the top 5 percent!</p>
+                <p>The top 5% of earners had an income of at least $225,251 in 2016.</p>
+            </div>
+            <div id="i250000" class="annotation">
+                <p>Income inequality in the US has been worsening since the 1970s.</p>
+            </div>
+            <div id="i260000" class="annotation">
+                <p>The top 1 percent's income share is now almost twice as large as the bottom 50 percent's.  Its share surpassed that of the bottom half in the mid-1990s and has only continued rising since.</p>
+            </div>
+            <div id="i280000" class="annotation">
+                <p>While in 1980 the top 1 percent earned on average 27 times more than the bottom 50 percent, by 2016 they earned 81 times more.</p>
+            </div>
+            <div id="i290000" class="annotation">
+                <p>Inequality has grown even at the top as the very richest saw their incomes grow the most.</p>
+            </div>
+            <div id="i300000" class="annotation">
+                <p>The income share of the top 0.1 percent is now nearly equal to that of the entire bottom 50 percent's.</p>
+            </div>
+            <div id="i310000" class="annotation">
+                <p>While the top 1 percent average over 40 times more income than the bottom 90 percent, those in the top 0.1 percent earned over 198 times more.</p>
+            </div>
+            <div id="i350000" class="annotation">
+                <p>The growth in income inequality has been driven more by equity gains rather than wage increases which has allowed the wealthy to benefit most from stock market gains during the post-Recession recovery.</p>
+            </div>
+            <div id="i400000" class="annotation">
+                <p>While worsening income inequality has been a global phenomenon, the issue has been particularly severe in the US.</p>
+            </div>
+            <div id="i410000" class="annotation">
+                <p>Compared to other developed countries, the US has one of the worst levels of inequality.</p>
+            </div>
+            <div id="i420000" class="annotation">
+                <p>And the gap has only been growing wider.</p>
+            </div>
+            <div id="i430000" class="annotation">
+                <p>While some inequality helps spur economic growth, too much inequality can in fact lead to slower growth.</p>
+            </div> 
+            <div id="i440000" class="annotation">
+                <p>Too much inequality also allows the wealthy to influence policies that benefit themselves and deprives those from less privileged backgrounds the opportunity to achieve their full potential.</p>
+            </div> 
+            <div id="i500000" class="annotation">
+                <p>Now let's see what it looks like at the very top of the income distribution.</p>
+            </div> 
+            <div id="i550000" class="annotation">
+                <p>Hang on.  It's going to take a while to get there.</p>
+            </div> 
+            <div id="i1000000" class="annotation">
+                <p>You are now a millionaire! But it's going to take a lot more to make it to the very top.</p>
+            </div>
+            <div id="i1010000" class="annotation">
+                <p>The highest paying occupations are well-known ones like doctors, lawyers and engineers.</p>
+            </div>
+            <div id="i1020000" class="annotation">
+                <p>But the people at the very top of the income distribution tend to be CEOs and superstar athletes and entertainers.</p>
+            </div>
+            <div id="i1500000" class="annotation">
+                <p>You may want to just keep your finger pressed on the Page Down button.</p>
+            </div>
+            <div id="i7800000" class="annotation">
+                <p>We're only halfway to what the CEOs of America's largest companies were paid on average.</p>
+            </div>
+            <div id="i8000000" class="annotation">
+                <p>These CEOs were earned more than the combined salaries of 264 median workers.</p>
+            </div>
+            <div id="i8500000" class="annotation">
+                <p>Even a top 5 percenter would have to work for over 69 years to make what these CEOs do in one year.</p>
+            </div>
+            <div id="i10000000" class="annotation">
+                <p>It's kind of mind-boggling how much the very wealthiest make isn't it?</p>
+            </div>
+            <div id="i10005000" class="annotation">
+                <p>And we're heading towards only what they were paid on average.</p>
+            </div>
+            <div id="i10010000" class="annotation">
+                <p>There are many who earned multiples more.</p>
+            </div>
+            <div id="i12000000" class="annotation">
+                <p>What would you do if you had this much money?</p>
+            </div>
+            <div id="i15600000" class="inc_level">
+                <p>This is how much CEOs of the top 350 firms in America were paid on average in 2016.  The CEO-to-worker pay ratio in 2016 was 271 to 1.  While American workers have seen an 11.2 percent increase in their earnings since 1978 (adjusted for inflation), CEO compensation has soared by 937 percent.</p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <h2>Summary of US Income Distribution</h2>
+            <p>The US has one of the highest levels of income inequality with the top 10 percent earning over 12.5 times what the bottom 10 percent make.  Since the 1950s, the top 1 percent have more than doubled their share of total income.</p>
+            <!--summary of US income distribution graph here -->
+        </div>
+
+        <script>
+            var vp_height = $(window).height();
+
+            $(window).scroll(function() {
+                var scrollPos = $(document).scrollTop();
+                // console.log("Viewport height:", vp_height);
+                // console.log("Scroll Position:", scrollPos);
+                var income = scrollPos - vp_height;
+                if(scrollPos < vp_height) {
+                    $("#income").text("0");
+                }
+                else if(income >= 15600000) {
+                    $("#income").text("15,600,000");
+                }
+                else {
+                    $("#income").text(income.toLocaleString(undefined, {maximumFractionDigits: 0}));
+                }
+            })
+        </script>
+  	
+    	<!-- // <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script> -->
+
+		<!-- <<script type="text/javascript" src="js/.js"></script> -->
+
+    </body>
+
+</html>
