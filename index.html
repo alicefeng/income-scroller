@@ -18,7 +18,7 @@
 		
 		<section id="cover">
             <h1>What Would the US Income Distribution Look Like if 1 pixel = $1?</h1>
-            <p>(A scroller inspired by __.)</p>
+            <p>(A scroller inspired by Josh Worth's <a href="http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html">If the Moon Were Only 1 Pixel</a>.)</p>
             <p class="direction">Scroll down to start making money.</p>
         </section>
 
@@ -189,6 +189,9 @@
             <div id="i8000000" class="annotation">
                 <p>These CEOs were earned more than the combined salaries of 264 median workers.</p>
             </div>
+            <div id="i8010000" class="annotation">
+                <p>However, the bulk of CEO compensation comes in the form of stock options and bonuses instead of wages.</p>
+            </div>
             <div id="i8500000" class="annotation">
                 <p>Even a top 5 percenter would have to work for over 69 years to make what these CEOs do in one year.</p>
             </div>
@@ -212,7 +215,7 @@
         <section id="footer">
             <h2>The US Income Distribution in 2016</h2>
 <!--             <p>The US has one of the highest levels of income inequality with the top 10 percent earning over 12.5 times what the bottom 10 percent make.  Since the 1950s, the top 1 percent have more than doubled their share of total income.</p> -->
-            <!--summary of US income distribution graph here -->
+            <div id="income_plot"></div>
         </section>
 
         <script>
@@ -235,9 +238,9 @@
             })
         </script>
   	
-    	<!-- // <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script> -->
+    	<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
 
-		<!-- <<script type="text/javascript" src="js/.js"></script> -->
+		<script type="text/javascript" src="js/inc_dist_plot.js"></script>
 
     </body>
 
