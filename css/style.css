@@ -1,18 +1,85 @@
 body {
 	margin: 0 auto;
-	/*max-width: 50vw;   make responsive */
-	/*font-family: 'PT Serif', serif;*/
 	font-family: 'Lora', serif;
 	line-height: 1.5;
-	/*font-size: 1.2rem;*/
-	/*padding: 0em 1em;*/
 	color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+    #cover, #income_scroll, #label, #footer > h2 {
+    	max-width: 80vw;
+    }
+
+	h1 {
+		font-size: 7vh;
+	}
+	.direction {
+		font-size: 1.2rem;
+	}
+
+    .inc_level, .annotation {
+    	width: 75vw;
+    }
+
+    #income_scroll {
+	background: linear-gradient(to right, #fff, #fff 95%, transparent 96%),
+				repeating-linear-gradient(to bottom, 
+										  #b3b3b3, 
+										  #b3b3b3 1px, 
+										  transparent 1px, 
+										  transparent 99px);   /* Firefox rendering bug with the first gradient */
+    }
+
+    #counter {
+    	padding: 0.3rem 0rem;
+		font-size: 1.1rem;
+    }
+
+    #label svg {
+		margin-left: calc(80vw - 70px - 1%);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #cover, #income_scroll, #label, #footer > h2 {
+    	max-width: 50vw;
+    }
+
+	h1 {
+		font-size: 10vmin;
+	}
+
+	.direction {
+		font-size: 1.777rem;
+	}
+
+    .inc_level, .annotation {
+    	width: 48vw;
+    }
+
+    #income_scroll {
+    		background: linear-gradient(to right, #fff, #fff 98%, transparent 98.05%),
+				repeating-linear-gradient(to bottom, 
+										  #b3b3b3, 
+										  #b3b3b3 1px, 
+										  transparent 1px, 
+										  transparent 99px);
+    }
+    
+    #counter {
+		padding: 1rem 1rem;
+		font-size: 1.333rem;
+    }
+
+    #label svg {
+		margin-left: calc(50vw - 70px - 1%);
+    }
 }
 
 #cover {
 	height: 100vh;
+	position: relative;
 	box-sizing: border-box;
-	max-width: 50vw;
 	padding: 0em 1em;
 	margin: 0 auto;
 	/*margin-top: -8%;*/
@@ -20,7 +87,6 @@ body {
 }
 
 h1 {
-	font-size: 7rem;
 	line-height: 1.2;
 	margin: 0;
 	padding-top: 5%;
@@ -33,12 +99,12 @@ a {
 .direction {
 	font-style: italic;
 	padding-top: 3%;
-	font-size: 1.777rem;
+	position: absolute;
+	bottom: 0;
 }
 
 .inc_level, .annotation {
  	position: absolute;
- 	width: 48vw;  /* make responsive */
  	box-sizing: border-box;
  	text-align: center;
  	padding: 3% 3%;
@@ -50,15 +116,8 @@ a {
 
 #income_scroll {
 	position: relative;
-	max-width: 50vw;
 	margin: 0 auto;
 	height: calc(100vh + 15600000px + 250px);
-	background: linear-gradient(to right, #fff, #fff 98%, transparent 98.05%),
-				repeating-linear-gradient(to bottom, 
-										  #555, 
-										  #555 1px, 
-										  transparent 1px, 
-										  transparent 99px);  /* Firefox rendering bug with the first gradient */
  }
 
 #counter {
@@ -67,22 +126,17 @@ a {
 	background-color: #fff;
 	z-index: 100;
 	margin-top: 0.1rem;
-	padding: 1rem 1rem;
-	font-size: 1.333rem;
 	border-bottom: 2px solid #b3b3b3;
 }
 
 #label {
 	position: absolute;
 	top: 200px;
-	width: 50vw;
 	height: 100px;
 }
 
 #label svg {
 	display: block;
-	margin-left: calc(50vw - 75px - 2%);
-	margin-right: 2%;
 }
 
 #i12486 {
@@ -328,7 +382,6 @@ a {
 }
 
 #footer > h2 {
-	max-width: 50vw;
 	margin: 0 auto;
 	margin-top: 25vh;
 }
@@ -355,5 +408,14 @@ a {
 }
 
 .axis text {
+	font-size: 0.8em;
+}
+
+.median_label {
+	font-size: 0.8em;
+	fill: #b3b3b3;
+}
+
+#data_source {
 	font-size: 0.8em;
 }

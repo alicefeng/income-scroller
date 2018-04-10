@@ -3,10 +3,7 @@
     <head>
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">  -->
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -27,7 +24,7 @@
                 <p>You have earned: $<span id="income"></span></p>
             </div>
             <div id="label">
-                <svg width="70px" height="100px"><text x="15" y="55" fill="#555">$100</text><polyline fill="none" stroke="#b3b3b3" points="70,1 60,1 60,95 70,95"/></svg>
+                <svg width="70px" height="100px"><text x="0" y="55" fill="#555">$100</text><polyline fill="none" stroke="#b3b3b3" points="50,1 40,1 40,95 50,95"/></svg>
             </div>
             
             <div id="i12486" class="inc_level">
@@ -187,7 +184,7 @@
                 <p>We're only halfway to what the CEOs of America's largest companies were paid on average.</p>
             </div>
             <div id="i8000000" class="annotation">
-                <p>These CEOs were earned more than the combined salaries of 264 median workers.</p>
+                <p>These CEOs earned more than the combined salaries of 264 median workers.</p>
             </div>
             <div id="i8010000" class="annotation">
                 <p>However, the bulk of CEO compensation comes in the form of stock options and bonuses instead of wages.</p>
@@ -199,7 +196,7 @@
                 <p>It's kind of mind-boggling how much the very wealthiest make isn't it?</p>
             </div>
             <div id="i10005000" class="annotation">
-                <p>And we're heading towards only what they were paid on average.</p>
+                <p>And we're only heading towards what they were paid on average.</p>
             </div>
             <div id="i10010000" class="annotation">
                 <p>There are many who earned multiples more.</p>
@@ -216,6 +213,7 @@
             <h2>The US Income Distribution in 2016</h2>
 <!--             <p>The US has one of the highest levels of income inequality with the top 10 percent earning over 12.5 times what the bottom 10 percent make.  Since the 1950s, the top 1 percent have more than doubled their share of total income.</p> -->
             <div id="income_plot"></div>
+            <p id="data_source">Data Sources: US Census Bureau</p>
         </section>
 
         <script>

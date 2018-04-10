@@ -24,9 +24,9 @@ var yscale = d3.scale.linear()
 	.domain([0, d3.max(data, function(d) { return d.income; })])
 	.range([h, 0]);
 
-// var rscale = d3.scale.sqrt()
-// 	.domain([0, d3.max(data, function(d) { return d.income; })])
-// 	.range([0, 100]);
+var rscale = d3.scale.sqrt()
+	.domain([0, d3.max(data, function(d) { return d.income; })])
+	.range([0, 25]);
 
 var xAxis = d3.svg.axis()
 	.scale(xscale)
@@ -59,6 +59,26 @@ plot.append("g")
   	.style("text-anchor", "start")
   	.text("Percent of Workers Earning Less");
 
+plot.append("line")
+	.attr("x1", 0)
+	.attr("x2", w)
+	.attr("y1", yscale(59039))
+	.attr("y2", yscale(59039))
+	.attr("stroke-dasharray", "2, 4")
+	.style("stroke", "#b3b3b3");
+
+plot.append("text")
+	.attr("class", "median_label")
+	.attr("x", 0)
+	.attr("y", yscale(59039) + 14)
+	.text("Half of all workers earned");
+
+plot.append("text")
+	.attr("class", "median_label")
+	.attr("x", 0)
+	.attr("y", yscale(59039) + 28)
+	.text("less than this");
+
 var thresholds = plot.selectAll(".threshold")
 	.data(data)
 	.enter()
@@ -81,5 +101,5 @@ thresholds.append("circle")
 thresholds.append("text")
 	.attr("class", "plot_label")
 	.attr("x", function(d) { return xscale(d.percentile); })
-	.attr("y", function(d) { return yscale(d.income) - 20; })
+	.attr("y", function(d) { return yscale(d.income) - 15; })
 	.text(function(d) { return formatCurrency(d.income); });
