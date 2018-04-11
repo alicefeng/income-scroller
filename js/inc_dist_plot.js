@@ -95,7 +95,7 @@ var thresholds = plot.selectAll(".threshold")
 thresholds.append("circle")
 	.attr("cx", function(d) { return xscale(d.percentile); })
 	.attr("cy", function(d) { return yscale(d.income); })
-	.attr("r", 8)
+	.attr("r", 5)
 	.style("fill", "#e6e6e6");
 
 thresholds.append("text")

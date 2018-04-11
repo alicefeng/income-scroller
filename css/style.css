@@ -347,8 +347,8 @@ a {
 	top: calc(100vh + 8010000px);
 }
 
-#i8500000 {
-	top: calc(100vh + 8500000px);
+#i8020000 {
+	top: calc(100vh + 8020000px);
 }
 
 #i10000000 {
@@ -365,6 +365,18 @@ a {
 
 #i12000000 {
 	top: calc(100vh + 12000000px);
+}
+
+#i14000000 {
+	top: calc(100vh + 14000000px);
+}
+
+#i14020000 {
+	top: calc(100vh + 14020000px);
+}
+
+#i14040000 {
+	top: calc(100vh + 14040000px);
 }
 
 #i15600000 {
@@ -418,4 +430,6 @@ a {
 
 #data_source {
 	font-size: 0.8em;
+	text-align: right;
+	padding-right: 20%;
 }
