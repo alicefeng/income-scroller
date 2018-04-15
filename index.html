@@ -210,6 +210,9 @@
             <div id="i14040000" class="annotation">
                 <p>Is it any wonder that so many feel abandoned and forgotten by a system that no longer works for them?</p>
             </div>
+            <div id="i14500000" class="annotation">
+                <p>Do these individuals really generate this much value for society?</p>
+            </div>
             <div id="i15600000" class="inc_level">
                 <p>This is how much CEOs of the top 350 firms in America were paid on average in 2016.  The CEO-to-worker pay ratio in 2016 was 271 to 1.  While American workers have seen an 11.2 percent increase in their earnings since 1978 (adjusted for inflation), CEO compensation has soared by 937 percent.</p>
             </div>
@@ -217,19 +220,64 @@
 
         <section id="footer">
             <h2>The US Income Distribution in 2016</h2>
-<!--             <p>The US has one of the highest levels of income inequality with the top 10 percent earning over 12.5 times what the bottom 10 percent make.  Since the 1950s, the top 1 percent have more than doubled their share of total income.</p> -->
-            <div id="income_plot"></div>
+            <div id="income_plot" class="svg-container"></div>
+            <div id="income_table" class="hidden">
+                <table>
+                    <tr>
+                        <th>Percentile</th>
+                        <th>Income</th>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td>$13,608</td>
+                    </tr>
+                    <tr>
+                        <td>20th</td>
+                        <td>$24,002</td>
+                    </tr>
+                    <tr>
+                        <td>40th</td>
+                        <td>$45,600</td>
+                    </tr>
+                    <tr>
+                        <td>50th</td>
+                        <td>$59,039</td>
+                    </tr>
+                    <tr>
+                        <td>60th</td>
+                        <td>$74,869</td>
+                    </tr>
+                    <tr>
+                        <td>80th</td>
+                        <td>$121,018</td>
+                    </tr>
+                    <tr>
+                        <td>90th</td>
+                        <td>$170,536</td>
+                    </tr>
+                    <tr>
+                        <td>95th</td>
+                        <td>$225,251</td>
+                    </tr>
+                </table>
+            </div>
             <p id="data_source">Data Source: US Census Bureau</p>
         </section>
 
         <script>
             var vp_height = $(window).height();
+            var vp_width = $(window).width();
+
+            /* display chart or table depending on viewport width */
+            if(vp_width <= 600) {
+                $("#income_table").toggleClass("hidden");
+                $("#income_plot").toggleClass("hidden");
+            }
 
             $(window).scroll(function() {
                 var scrollPos = $(document).scrollTop();
-                // console.log("Viewport height:", vp_height);
-                // console.log("Scroll Position:", scrollPos);
                 var income = scrollPos - vp_height;
+
                 if(scrollPos < vp_height) {
                     $("#income").text("0");
                 }

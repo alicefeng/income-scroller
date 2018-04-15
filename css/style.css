@@ -379,6 +379,10 @@ a {
 	top: calc(100vh + 14040000px);
 }
 
+#i14500000 {
+	top: calc(100vh + 14500000px);
+}
+
 #i15600000 {
 	top: calc(100vh + 15600000px);
 }
@@ -398,6 +402,10 @@ a {
 	margin-top: 25vh;
 }
 
+.hidden {
+	display: none;
+}
+
 #income_plot {
 	margin: 5vh auto;
 }
@@ -406,6 +414,22 @@ a {
 	display: block;
 	margin: 0 auto;
 }
+
+/*.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.svg-content {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
 
 .plot_label {
 	text-anchor: middle;
@@ -426,6 +450,15 @@ a {
 .median_label {
 	font-size: 0.8em;
 	fill: #b3b3b3;
+}
+
+table {
+	margin: 10% 10% 20%;
+}
+
+td, th {
+	padding: 5px 15px;
+	text-align: right;
 }
 
 #data_source {
