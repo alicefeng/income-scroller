@@ -43,6 +43,9 @@ var plot = d3.select("#income_plot")
 	.append("svg")
 		.attr("width", w + padding*2)
 		.attr("height", h + padding*2)
+		// .attr("preserveAspectRatio", "xMinYMin meet")
+		// .attr("viewBox", "0 0 680 680")
+		// .classed("svg-content", true)
 	.append("g")
 		.attr("transform", "translate(" + padding + "," + padding + ")");
 
