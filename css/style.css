@@ -191,10 +191,6 @@ a {
 	top: calc(100vh + 45600px);
 }
 
-/*#i48000 {
-	top: calc(100vh + 48000px);
-}*/
-
 #i59039 {
 	top: calc(100vh + 59039px);
 }
@@ -388,11 +384,9 @@ a {
 }
 
 #footer {
-	height: 125vh;
-	/*margin-top:  100vh;*/
+	min-height: 125vh;
 	box-sizing: border-box;
 	background: linear-gradient(to bottom, transparent, transparent 20%, #555 20%);
-	/*background: #555;*/
 	color: #e6e6e6;
 	padding: 5%;
 }
@@ -414,22 +408,6 @@ a {
 	display: block;
 	margin: 0 auto;
 }
-
-/*.svg-container {
-	display: inline-block;
-	position: relative;
-	width: 100%;
-	padding-bottom: 100%;
-	vertical-align: top;
-	overflow: hidden;
-}
-
-.svg-content {
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	left: 0;
-}*/
 
 .plot_label {
 	text-anchor: middle;

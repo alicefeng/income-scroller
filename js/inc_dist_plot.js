@@ -33,9 +33,6 @@ var xAxis = d3.svg.axis()
 	.tickValues([0, 10, 20, 40, 50, 60, 80, 90, 95, 100])
 	.orient("bottom");
 
-// var yAxis = d3.svg.axis()
-// 	.scale(yscale)
-// 	.orient("left");
 
 
 // set up chart
@@ -43,9 +40,6 @@ var plot = d3.select("#income_plot")
 	.append("svg")
 		.attr("width", w + padding*2)
 		.attr("height", h + padding*2)
-		// .attr("preserveAspectRatio", "xMinYMin meet")
-		// .attr("viewBox", "0 0 680 680")
-		// .classed("svg-content", true)
 	.append("g")
 		.attr("transform", "translate(" + padding + "," + padding + ")");
 
